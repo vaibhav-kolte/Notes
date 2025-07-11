@@ -60,12 +60,13 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation("androidx.room:room-runtime:2.7.2")
-    kapt("androidx.room:room-compiler:2.7.2")
+    implementation(libs.androidx.room.runtime)
+    //noinspection KaptUsageInsteadOfKsp
+    kapt(libs.androidx.room.compiler)
 
     // Optional for Kotlin coroutines support
-    implementation("androidx.room:room-ktx:2.7.2")
+    implementation(libs.androidx.room.ktx)
 
-    implementation("androidx.navigation:navigation-compose:2.9.1")
-    implementation("androidx.compose.runtime:runtime-livedata:1.8.3")
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.runtime.livedata)
 }
